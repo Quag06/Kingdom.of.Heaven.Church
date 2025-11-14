@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		      <meta charset="utf-8">
+			  <title>CONTACT</title>
+			  <meta name="viewport" content="Width=device-width,initial-scale=1.0">
+		</head>
+		
+		<style>
+		    body{
+			margin:0px;
+			font-family:'sergoe UI',sans-serif;
+			background-color:#FFFFF0;
+			color:#333;
+			padding:5px;
+			}
+			header{
+			background-image:url('images/faith.jpg');
+			background-size:cover;
+			background-position:center;
+			padding:1px;
+			position:relative;
+			text-align:center;
+			}
+			.effet{
+			margin:20px auto;
+			max-width:300px;
+			white-space:nowrap;/*empeche le retour a la ligne */
+			}
+			.effet img{
+			width:50px;
+			height:50px;
+			border-radius:50%;
+			margin-bottom:5px;
+			}
+	       .introduction{
+		    font-weight:bold;
+			border-radius:8px;
+			background-color:rgb(255,0,128);
+		    padding:10px;
+		    text-align:justify;
+		    margin-bottom:3px;
+			}
+			.formulaire{
+			font-weight:bold;
+			border-radius:8px;
+			background-color:rgb(255,0,255);
+		    padding:10px;
+		    text-align:justify;
+		    margin-bottom:3px;
+			}
+			
+			.contacts{
+			display:flex;
+		    flex-direction:columm;
+			padding:5px;
+		    margin:3px;
+			gap:3px;
+			}
+			.Find{
+			background-color:rgb(128,255,255);
+			flex:2;
+			padding:12px;
+			font-weight:bold;
+			text-align:justify;
+			line-height:25px;
+			border-radius:10px;
+			}
+			.Invitation_Responsables{
+			display:flex;
+		    flex-direction:columm;
+			padding:5px;
+		    margin:3px;
+			gap:3px;
+			}
+			.Welcome{
+			background-color:rgb(128,255,255);
+			flex:2;
+			padding:12px;
+			font-weight:bold;
+			text-align:justify;
+			line-height:25px;
+			border-radius:10px;
+			}
+			#icone{
+			width:30px;
+			height:30px;
+			border-radius:50%;
+			margin-bottom:2px;
+			}
+			nav ul{
+			list-style:none;
+			padding:10px;
+			display:flex;
+			justify-content:center;
+			flex-wrap:wrap;
+			gap:15px;
+			}
+			nav ul li a{
+			padding:8px 12px;
+			display:inline-block;
+			color:white;
+			text-decoration:none;
+			font-weight:bold;
+			background-color:rgba(0,0,0,0.4);
+			border:2px solid #87CEEB;
+			)
+			footer{
+		    background-color:#87CEEB;
+            color:black;
+            border:1px solid black;
+			padding-bottom:20px;
+			}
+			
+		</style>
+		
+		<body>
+		      <header>
+			    <nav>
+						<ul>
+							 <li><a href="index.html">ACCUEIL</a></li>
+							  <li><a href="propos.html">A PROPOS</a></li>
+							 <li><a href="Activ&event.html">ACTIVITES & EVENEMENT</a></li>
+							 <li><a href="Mess&Ress.html">MESSAGES ET RESSOURCES</a></li>
+							 <li><a href="Don.html">DON</a></li>
+							 <li><a href="Engag&Minist.html">ENGAGEMENTS ET MINISTERES</a></li>
+						</ul>
+				 </nav>
+			      <div class="effet">
+			        <img src=" images/debut1_contact.jpg" alt=""><strong>CONTACT</strong><img src=" images/debut2_contact.jpg" alt="">
+				  </div>
+				</header>
+				
+				 <main>
+						<div class="introduction">
+							 <p>
+								Vous avez une question, un besoin, ou simplement envie de nous saluer? Kingdom of Heaven Church est là pour vous. Que vous soyez en quête de vérité, en recherche de communauté, ou simplement curieux, nous vous accueillons avec amour et bienveillance. N’hésitez pas à nous écrire, à nous appeler, ou à venir nous rencontrer. Le Royaume est ouvert à tous.
+							 </p>
+							 
+							 <p>
+								"Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos." – Matthieu 11:28
+							 </p>
+						</div>
+								<div class="formulaire">
+									
+									  <fieldset>
+										  <legend>Contact</legend>
+										  <table>
+												<tr>
+													<th><label>Nom</label></th>
+													<td> <input type="name" placeholder="Nom de Famille" required></td>
+												</tr>
+												
+												<tr>
+													<th><label>Prenom</label></th>
+													<td> <input type="surname" placeholder=" votre Prenom" required> </td>
+												</tr>
+												
+												<tr>
+													<th> <label>Email</label> </th>
+													<td> <input type="email" placeholder="Adresse email" required> </td>
+												</tr>
+												
+												<tr>
+													<th> <label>Tel</label> </th>
+													<td> <input type="Numero" placeholder="Numero de Telephone" required> </td>
+												</tr>
+												
+												<tr>
+													<th> Objet du mesage</th>
+													<td>
+														 <input type="checkbox" value="question"/>Question
+														 <input type="checkbox" value="prière"/>Prière
+														 <input type="checkbox" value="témoignage"/>Témoignage
+														 <input type="checkbox" value="information"/>Information
+														 <input type="checkbox" value="autre"/>Autre
+													</td>
+												</tr>
+												
+												<tr>
+													<th>Message</th>
+													<td>
+														<textarea type="text"></textarea>
+													</td>
+												</tr>
+												
+												<tr>
+													<th></th>
+													<td>
+													   <input type="checkbox" value="recontact"/>Je souhaite être recontacté
+													</td>
+												</tr>
+												
+												<tr>
+													<th></th>
+													<td>
+													   <input type="submit" value="Envoyer"/>
+													   <input type="reset" value="Annuler"/>
+													</td>
+												</tr>
+												
+									  </fieldset>
+											
+									</table>
+								</div>
+								
+							<section class="contacts">
+								<div class="Find"> <!--coordonnees--!>
+								  <h3>Coordonnées </h3>
+										<p>
+											Adresse: BUJUMBURA, Kigobe Nord Numero 77
+										</p>
+										
+										<p>
+											Tel:+257 67 70 89 45 ou encore +257 76 77 77 77
+										</p>
+										
+										<p>
+										   E-mail:<a href="mailto:Kingdomchurch@.org">Kingdomchurch@.org</a>
+										</p>
+								</div>
+								
+								<div class="Find">  <!--social_media--!>
+									  <p>
+										<a href="http://www.facebook.com"><img src="images/facebook.jpg"id="icone"/></a>KH Church
+									  </p>
+									  
+									  <p>
+										<a href="http://www.instagram.com"><img src=" images/instagram.jpg"id="icone"/></a>Kingdom_of_Heaven_Church
+									  </p>
+									   
+									  <p>
+										<a href="http://www.youtube.com"><img src="images/youtube.jpg" id="icone"/></a>KH-Church channel
+									  </p>
+									  
+									  <p>
+										<a href="http://www.X.com"><img src="images/X.jpg" id="icone"/></a>Kingdom.Heaven.Church
+									  </p>
+									  
+									  <p>
+									     <a href="http://WWW.threads.com"><img src="images/threads.jpg" id="icone"/></a>kingdom_ _Hevean_Church
+									  </p>
+								  
+								</div>
+							</section>
+							
+							<section class="Invitation_Responsables">	
+								<div class="Welcome">  <!--invitation--!>
+									<p>
+									   Rien ne remplace une rencontre en personne. Si vous êtes dans la région, nous serions honorés de vous accueillir lors de nos cultes ou événements. Venez découvrir une communauté vivante, un message puissant, et une atmosphère de paix. Le Royaume vous attend.
+									</p>
+									
+									<p>
+									   <button><a href="Activ&event.html">Invitation</a></button>
+									</p>
+									
+								</div>
+								
+								<div class="Welcome">   <!--Responsables--!>
+									 <h3>Responsables à contacter</h3>
+									   <p>Pasteur principal: +257 61584951</p>
+									   <p>Responsable accueil:+257 66489214</p>
+									   <p>Responsable jeunesse: +257 67826432</p>
+									   <p>Responsable prière: +257 77456832</p>
+									   <p>Responsable technique ou communication:+257 76734543</p>
+									</div>
+							</section>
+			</main>
+			
+			<footer>
+
+					<div class="row">
+						 <p class="col">
+						    Adresse: BUJUMBURA, Kigobe<br/>
+							Tel:+257 67 70 89 45<br/>
+							E-mail:<a href="mailto:Kingdomchurch@.org">Kingdomchurch@.org</a>	<br/>
+						</p>
+							
+						
+					</div>
+					
+					 <p>&copy BIU-BST-12-077-2024 *TOUS DROITS RESERVES</p>
+					 <p>IRAKOZE Quick Agur </p>
+			</footer>
+		</body>
+</html>

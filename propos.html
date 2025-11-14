@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+     <head>
+	     <meta charset="utf-8">
+		 <title>A Propos </title>
+		 <meta name="viewport" content="Width=device-width,initial-scale=1.0">
+		 <style>
+		  
+		    body{
+			margin:0px;
+			font-family:'sergoe UI',sans-serif;
+			background-color:#FFFFF0;
+			color:#333;
+			padding:5px;
+			}
+		    header{
+			background-image:url('images/faith.jpg');
+			background-size:cover;
+			background-position:center;
+			padding:1px;
+			position:relative;
+			text-align:center;
+			}
+			.effet{
+			margin:20px auto;
+			max-width:300px;
+			}
+			.effet img{
+			width:50px;
+			height:50px;
+			border-radius:80%;
+			margin-bottom:5px;
+			}
+			
+			.presentation{
+			padding:10px;
+			background-color:#fff;
+			margin-top:1px;
+			border-radius:8px;
+			}
+			.bienvenue{
+			background:linear-gradient(to right,rgb(255,0,255) 0%, #b19cd9 50%,#dcdcdc 100%);
+			text-align:justify;
+			border-radius:8px;
+			padding:15px;
+			font-size:1em;
+			margin-bottom:2px;
+			
+			
+			}
+			.row{
+			display:flex;
+			flex-direction:columm;
+			padding:5px;
+			margin:1px;
+			gap:5px;
+			}
+			.box{
+			background:linear-gradient(135deg,rgb(128,255,255),#b0c4de,#eeeeee);
+			flex:3;
+			padding:5px;
+			font-weight:bold;
+			text-align:center;
+			border-radius:8px;
+			}
+			.fiction{
+			margin-left:20px;
+			margin-right:20px;
+			text-align:justify;
+			line-height:25px;
+			}
+			.fact{
+			margin-left:70px;
+			margin-right:70px;
+			text-align:justify;
+			line-height:25px;
+			}
+			main{
+			padding:5px;
+			}
+			.pictures-top{
+			display:grid;  /*active le systeme de grille sur le conteneur */
+			grid-template-columns:repeat(3,1fr); /*cree 3 colonnes de taille egale (1 fraction chacune) */
+			gap:2px;
+			margin-bottom:2px;
+			}
+			
+			.picture-block{
+			background-color:#FFFFF0;  
+			border:1px solid #ccc;
+			padding:0px;
+			text-align:center;
+			}
+			.pictures-bottom{
+			display:grid;    /*active le systeme de grille sur le conteneur */
+			grid-template-columns:repeat(3,1fr);   /*cree 3 colonnes de taille egale (1 fraction chacune) */
+			gap:2px;
+			margin-bottom:2px;
+			}
+			#photo{
+			width:250px;
+			height:250px;
+			}
+			
+			
+			.central{
+			text-align:center;
+			margin-bottom:30px;
+			}
+			.integration{
+			margin-top:10px;
+			background-color:#ffe0b2;
+			padding:10px 8px;
+			border-raduis:16px;
+			font-size:1.2em;
+			}
+			
+			button{
+			margin:10px;
+			padding:15px 40px;
+			font-size:1em;
+			background-color:rgb(34,177,76);
+			color:white;
+			border:none;
+			border-radius:5px;
+			cursor:pointer;
+		    }
+			
+			nav ul{
+			list-style:none;
+			padding:10px;
+			display:flex;
+			justify-content:center;
+			gap:15px;
+			}
+			nav ul li a{
+			padding:8px 12px;
+			color:white;
+			text-decoration:none;
+			font-weight:bold;
+			background-color:rgba(0,0,0,0.4);
+			border:2px solid #87CEEB;
+			}
+			.Monde{
+			display:flex;
+			flex-direction:column; /* il range le block comme colonne */
+			gap:10px; /*Espace entre les continents */
+			justify-content:center;
+			align-items:flex-start;  /* va aligner tous les elements enfants en haut du conteneur */
+			flex-wrap:nowrap;   /*tout les elements restent sur la mm ligne , mm s'ils debordent du conteneur */
+			}
+			.continent{
+			display:flex;
+			gap:5px;/*Espacement entre les pays */
+			flex-direction:column;
+			background:linear-gradient(to right,rgb(34,177,76) 0%, #a0a0a0 50%, #cccccc 100%);
+			justify-content:center;
+			align-items:flex-start;  /* va aligner tous les elements enfants en haut du conteneur */
+			flex-wrap:nowrap;      /*tout les elements restent sur la mm ligne , mm s'ils debordent du conteneur */
+			padding:8px;
+			border-radius:2px;
+			}
+			.pays{
+			background-color:#ffffff;
+			padding:5px;
+			border:1px solid #ccc;
+			text-align:center;
+			font-weight:bold;
+			border-radius:4px;
+			min-width:100px;
+			}
+			#Eglise{
+			width:400px;
+			height:250px;
+			object-fit:cover;
+			}
+			#drapeau{
+			width:120px;
+			height:77px;
+			border-radius:7px;
+			}
+			
+			button a{
+			text-decoration:none;
+			}
+			footer{
+		    background-color:#87CEEB;
+            color:black;
+            border:1px solid black;
+			padding-bottom:20px;
+			}
+			.social_media{
+			position:absolute;
+			right:25px;
+			}
+			.social_media img{
+			width:15px;
+			height:15px;
+			border-radius:50%;
+			margin-bottom:2px;
+			}
+    
+		
+			
+		 </style>
+	 </head>
+	 
+	 <body>
+	    <header>
+		        <nav>
+			     <ul>
+					 <li><a href="index.html">ACCUEIL</a></li>
+					 <li><a href="Activ&event.html">ACTIVITES & EVENEMENT</a></li>
+					 <li><a href="Mess&Ress.html">MESSAGES ET RESSOURCES</a></li>
+					 <li><a href="contact.html">CONTACT</a></li>
+					 <li><a href="Don.html">DON</a></li>
+					 <li><a href="Engag&Minist.html">ENGAGEMENTS ET MINISTERES</a></li>
+				 </ul>
+			 </nav>
+				
+			  <div class="effet">
+	            <img src="images/debut1_propos.jpg" alt=""/><strong>A PROPOS DE NOUS</strong><img src="images/debut2_propos.jpg" alt=""/>
+			  </div>	
+					   
+		
+		</header>
+		
+		
+				  <div class="bienvenue">
+					  <p>
+						  Bienvenue dans l’univers de Kingdom of Heaven Church.<br/>
+						  Nous sommes une communauté chrétienne passionnée par la présence de Dieu, engagée dans l’amour du prochain, et déterminée à faire rayonner le Royaume des cieux sur la terre.
+						  Ici, chaque cœur est invité à rencontrer Jésus-Christ, à grandir dans la foi, et à vivre une vie transformée par la puissance du Saint-Esprit.
+					  </p>
+					  
+					  <p>
+					  "Que ton règne vienne, que ta volonté soit faite sur la terre comme au ciel." Matthieu 6:10
+					  </p>
+				 </div>
+				<div class="row"> 
+					 <div class="box">
+					 <!--historique--!>
+						 <p class="fiction">
+								 Kingdom of Heaven Church est née d’un appel divin reçu par un groupe de croyants animés par le désir de voir le Royaume de Dieu s’établir dans les coeurs et dans les villes.<br>
+								 Depuis ses débuts modestes, l’église a grandi en nombre, en foi et en impact, devenant un phare spirituel pour tous ceux qui cherchent la vérité et la vie.
+						</p>
+					</div>
+						
+						<div class="box">   
+						<!--vision--!>
+								<p class="fiction">				
+								Une section dédiée à la mission spirituelle de l’église:<br/>
+									- Proclamer l’Évangile<br/>
+									- Former des disciples<br/>
+									- Servir les pauvres et les malades<br/>
+									- Élever une génération consacrée à Dieu<br/>
+								</p>
+								
+								<p class="fiction">
+									Et une vision claire:<br/>
+									 Notre vision est de bâtir une église où le ciel touche la terre, où chaque croyant devient un ambassadeur du Royaume, et où la gloire de Dieu se manifeste dans chaque aspect de la vie.
+							   </p>
+						</div>
+						
+						<div class="box">
+						<!--nos valeurs--!>
+								<p class="fiction">
+									 Une liste ou une présentation des valeurs fondamentales:<br/>
+										- Foi: croire en Jésus-Christ comme Seigneur et Sauveur<br>
+										- Amour: aimer Dieu et son prochain sans condition<br/>
+										- Sainteté: vivre une vie consacrée et pure<br/>
+										- Unité: marcher ensemble dans l’harmonie et la paix<br>
+										- Service: mettre ses dons au service du Royaume<br/>
+							   </p>
+						</div>
+					</div>
+					
+					<main>
+					  <div class="presentation">
+							<h2>Notre équipe</h2>
+								<section class="pictures-top">
+									<div class="picture-block">
+										  <img src="images/pasteur1.jpg" alt="Peter KING's picture" id="photo">
+										  <div>Révérend pasteur Peter KING , de Kingdom of Heaven Church basée  aux États Unis d'Amérique.</div>
+									</div>
+								
+								
+								<div class="picture-block">
+									 <img src="images/pasteur2.jpg" alt="Tony STEVENSON's picture" id="photo">
+									 <div class="info">Révérend Pasteur Tony STEVENSON ,de kingdom of Heaven Church basée  aux Royaumes Unis.</div>
+								</div>
+								
+								
+								<div class="picture-block">
+									  <img src="images/pasteur3.jpg" alt="Jimmy JAMES's Picture" id="photo">
+									  <div class="info">Révérend pasteur Jimmy JAMES, de kingdom of Heaven Church basée  en Australie.</div>
+								</div>
+								
+								
+								<div class="picture-block">
+									  <img src="images/pasteur4.jpg" alt="Chris REACHER's Picture" id="photo">
+									  <div>Reverend Pasteur Chris REACHER, de Kingdom of Heaven Church basée  en Afrique du Sud.</div>
+								</div>
+								
+								<div class="picture-block">
+									  <img src="images/pasteur5.jpg" alt="Bosco YUSSUF's Picture" id="photo">
+									  <div class="info">Révérend Pasteur Bosco YUSSUF ,de Kingdom of Heaven Church basée  au Sénégal.</div>
+								</div>
+								
+								<div class="picture-block">
+									  <img src="images/pasteur6.jpg" alt="Joseph KLANE's picture" id="photo">
+									  <div class="info">Révérend Pasteur Joseph KANE, de kingdom of Heaven Church basée  au Centre Afrique.</div>
+								</div>
+							</section>
+							
+								
+							<section class="central">
+								<div class="integration"> Kingdom of Heaven Church-BURUNDI</div>
+									   <div class="picture-block">
+											   
+											   <img src="images/pasteur.jpg" alt="Jean de DIEU MPAWENAYO's picture" id="photo">
+											   <div class="info">Révérend Pasteur Jean de Dieu MPAWENAYO, de Kingdom of Heaven Church basée au BURUNDI.</div>
+											   
+										</div>
+							</section>
+							
+							<section class="pictures-bottom">
+										
+											<div class="picture-block">
+												<img src="images/Resp_louange.jpg" alt="Pierre claver MASABO's Picture" id="photo">
+												<div class="info"> Mr Pierre Claver MASABO, Responsable du Groupe de louange et Adoration.</div>
+											</div>
+											
+											<div class="picture-block">
+												<img src="images/Res_jeunesse.jpg" alt="Ange Bella  MANZI's Picture " id="photo">
+												<div class="info"> Evangeliste Ange Bella MANZI, Responsable de la jeunesse.</div>
+											</div>
+											
+											<div class="picture-block">
+												<img src="images/Res_Priere.jpg" alt="Laetitia NGABIRANO 's Picture" id="photo">
+												<div>Evangeliste Laetitia NGABIRANO, Responsable de la Prière.</div>
+											</div>
+									
+							</section> 
+					</div>
+					
+				  
+				  <div>
+					   <h2> Nos Extensions</h2>
+						<button><a href="#Amerique">AMERIQUE</a></button>
+						<button><a href="#Europe">EUROPE</a></button>
+						<button><a href="#Afrique">AFRIQUE</a></button>
+						<button><a href="#Oceannie">OCEANNIE</a></button>
+						<button><a href="#Asie">ASIE</a></button>
+						
+				  </div>
+				   
+					<section class="Monde">
+				  
+					  <div class="continent">
+					  <!--AMERIQUE--!>
+					  <h1 id="Amerique"> AMERIQUE </h1>
+				  
+						  <div class="pays">
+								 <img src="images/American_church.jpg" title="Kingdom of Heaven  Church-USA" id="Eglise">
+								 <img src="images/USA_Drapeau.jpg" id="drapeau">
+									 <h3>USA-Pennsylvanie</h3>
+										 <p class="fact">
+											La Kingdom of Heaven Church en Pennsylvanie est située à Newfoundland, dans un cadre paisible entouré de nature. Elle est connue pour son engagement envers la paix mondiale et la restauration spirituelle. Fondée avec une vision de transformation communautaire, elle accueille chaque dimanche des fidèles venus chercher la présence de Dieu et des enseignements profonds sur le Royaume céleste.
+										 </p>
+										 
+										 <p class="fact">
+											Dans le cœur vibrant de l’Amérique, une seule église a donné naissance à *quatre autres*, chacune implantée dans une ville différente. Ce n’était pas simplement une expansion, mais une explosion de foi, de compassion et de communauté. De la côte Est aux plaines du Midwest, cette église-mère a semé des graines qui ont fleuri dans des contextes uniques, portant le même feu sacré.
+										 </p>
+										 
+										 <p class="fact">
+											 Une église située à Pennsylvanie, États-Unis, a donné naissance à:Dallas (États-Unis),Atlanta (États-Unis),Phoenix (États-Unis),San Diego (États-Unis).<br/>
+											 
+													Chaque ville a vu s’élever une communauté vibrante, inspirée par la vision de Chicago.
+
+										 </p>
+						 </div>
+						 
+						 <div class="pays">
+							 <img src="images/canada_church.jpg" title="Kingdom of Heaven  Church-Canada" id="Eglise">
+							 <img src="images/canada_Drapeau.jpg" id="drapeau">
+								 <h3>Canada-ottawa</h3>
+								 <p class="fact">
+									À Ottawa, la Kingdom Culture Church incarne l’esprit du Royaume de Dieu à travers des rencontres dynamiques et une approche moderne de la foi. Fondée par Shawn et Michelle Gabie, cette église vise à “aider chacun à expérimenter Dieu” dans tous les aspects de la vie. Elle se distingue par son énergie, ses enseignements surnaturels et son impact dans la capitale canadienne.
+								 </P>
+								 
+								 <p class="fact">
+								 Du froid du Yukon aux rues animées de ottawa, *sept églises* ont vu le jour grâce à une seule. Ce n’est pas seulement le Canada qui a été touché: certaines sont nées dans d’autres *pays et villes*, preuve que l’impact spirituel ne connaît pas de frontières. Une église, une vision, et sept foyers de lumière.
+								 </p>
+								 
+								 <p class="fact">
+								 Depuis ottawa, une église a engendré:Vancouver (Canada),Montréal (Canada),Halifax (Canada),Ottawa (Canada),New York (États-Unis),Londres (Royaume-Unis),Londres (Royaume-Unis),Bruxelles (Belgique).<br/>
+									
+										Une expansion qui dépasse les frontières canadiennes, touchant l’Europe et les États-Unis.
+
+								 </p>
+						 </div>
+						 
+						 <div class="pays">
+							 <img src="images/Alaska_church.jpg" title="Kingdom of Heaven  church-Alaska" id="Eglise">
+							 <img src="images/USA_Drapeau.jpg" id="drapeau">
+								 <h3> Alaska </h3>
+									<p class="fact">
+									   La Kingdom Life Church en Alaska est une communauté vibrante qui embrasse les dons du Saint-Esprit et les cinq ministères bibliques. Dirigée par le pasteur Kim Patterson, cette église se veut un lieu de guérison, d’unité et de leadership spirituel dans le Grand Nord. Elle joue un rôle essentiel dans la vie des croyants de cette région isolée.																																																																																																																											
+									</p>
+									
+									<p class="fact">
+									  Dans les terres glacées de l’Alaska, une église a bravé l’isolement pour donner naissance à *cinq autres*. Chacune est devenue un refuge, un phare dans la nuit polaire, portant la chaleur de la foi là où le silence règne.
+									</p>
+									
+									<p class="fact">
+										Une église à *Anchorage* a donné naissance à:Fairbanks (Alaska),Juneau (Alaska),Nome (Alaska),Seattle (États-Unis),Whitehorse (Canada).<br/>
+											
+												Même dans les terres glacées, la foi s’est propagée avec chaleur.
+									</p>
+						</div>
+						
+						<div class="pays">
+							<img src="images/Mexique_church.jpg" title="Kingdom of Heaven  Church-Mexique" id="Eglise">
+							<img src="images/Mexique_Drapeau.jpg" id="drapeau">
+								<h3>Mexique-Mexico</h3>
+									<p class="fact">
+									 Au Mexique, l’esprit du Royaume se manifeste à travers des initiatives missionnaires puissantes. L’église de San Luis, née sous un arbre dans le désert, est aujourd’hui un centre communautaire florissant. Elle offre des soins médicaux, des cours, et surtout, un message d’espérance. Cette œuvre est portée par Church Mexico, une mission dédiée à planter des églises et transformer des vies dans le nord du pays.
+									</p>
+									
+									<p class="fact">
+									 Sous le soleil brûlant du Mexique, une église a donné vie à *quatre autres*, dans des villes différentes et même au-delà du pays. C’est une foi qui danse, qui guérit, qui unit.
+									</p>
+									
+									<p class="fact">
+										Depuis Mexico, sont nées:Guadalajara (Mexique),Cancún (Mexique),San Antonio (États-Unis),Bogotá (Colombie).<br/>
+				
+										Une expansion latino-américaine et transfrontalière.
+									</p>
+						
+						</div>
+					</div>
+					
+					<div class="continent">
+					<!--EUROPE--!>
+					<h1 id="Europe"> EUROPE </h1>
+						<div class="pays">
+							  <img src="images/UK_church.jpg" title="Kingdom of Heaven Church-UK" id="Eglise">
+							  <img src="images/UK_Drapeau.jpg" id="drapeau">
+								<h3>UK-London</h3>
+									  <p class="fact">
+									   Au Royaume-Uni, la Kingdom of Heaven Church enseigne la justice, la sainteté et la relation personnelle avec Dieu. Des églises comme Goldstone Church ou Belvidere Road Church explorent les paraboles du Royaume et encouragent les croyants à vivre selon les valeurs du Christ.
+									  </p>
+									  
+									  <p class="fact">
+									   Au Royaume-Uni, une église a engendré *trois nouvelles communautés*, chacune dans une ville différente. De Londres à Manchester, la foi s’est propagée comme une mélodie ancienne retrouvée, résonnant dans les cœurs modernes.
+									  </p>
+									  
+									  <p class="fact">
+											  Depuis Londres, sont nées:Manchester (Royaume-Uni),Birmingham (Royaume-Uni),Dublin (Irlande).<br/>
+											
+												Une expansion dans les îles britanniques et au-delà.
+									</p>
+						</div>
+						
+						<div class="pays">
+							   <img src="images/France_church.jpg" title="Kingdom of Heaven Church-France" id="Eglise">
+							   <img src="images/France_Drapeau.jpg" id="drapeau">
+									<h3>France-Paris</h3>
+									   <p class="fact">
+									   À Paris, la spiritualité du Royaume se manifeste dans des lieux emblématiques comme Notre-Dame, où le Jubilé 2025 invite les fidèles à vivre une année de grâce et de renouveau. L’église célèbre les mystères du Christ et la beauté de la foi à travers des pèlerinages et des prières profondes.
+									   </p>
+									   
+									   <p class="fact">
+										 Dans l’élégance spirituelle de la France, une église a donné naissance à *cinq autres*, dispersées dans des villes et même au-delà des frontières. Chaque nouvelle église est une voix qui chante l’héritage de celle qui l’a inspirée.
+									   </p>
+									   
+									   <p class="fact">
+											   Une église à Paris a donné naissance à:Lyon (France),Marseille (France),Bruxelles (Belgique),Genève (Suisse),Montréal (Canada).<br/>
+								
+												Un rayonnement francophone qui traverse les continents.
+
+									   </p>
+						</div>
+						
+						<div class="pays">
+							   <img src="images/Finlande_church.jpg" title="Kingdom of Heaven Church-Finlande" id="Eglise">
+							   <img src="images/Finlande_Drapeau.jpg" id="drapeau">
+									<h3>Finlande-Helsinki</h3>
+									   <p class="fact">
+									   En Finlande, la Kingdom of Heaven Church s’exprime à travers des communautés multiculturelles, notamment à Turku, où des pasteurs venus de Malaisie animent des ministères de réveil et d’enseignement prophétique. L’église y est un lieu de puissance spirituelle et de transformation.
+									   </p>
+									   
+									   <p class="fact">
+									   Dans les forêts silencieuses de Finlande, une église a fait naître *trois autres*, chacune portant la lumière dans des lieux où l’hiver semble éternel. Mais là où il y a foi, il y a printemps.
+									   </p>
+									   
+									   <p class="fact">
+										   Une église à Helsinki a donné naissance à:Tampere (Finlande),Turku (Finlande),Tallinn (Estonie).<br/>
+							
+											Une foi nordique qui traverse la mer Baltique.
+									   </p>
+						</div>
+						
+						<div class="pays">
+								<img src="images/Suisse_church.jpg" title="Kingdom of Heaven Church-Suisse" id="Eglise">
+								<img src="images/Suisse_Drapeau.jpg" id="drapeau">
+									<h3>Suisse-Bern</h3>
+										<p class="fact">
+										En Suisse, la Kingdom of Heaven Church est appelée à jouer un rôle stratégique dans une nouvelle Réforme spirituelle. Des prophéties annoncent un réveil puissant, où l’église suisse sortira de l’ombre pour embrasser sa destinée divine. Elle est vue comme un moteur de révolution spirituelle en Europe.
+										</p>
+										
+										<p class="fact">
+										 Au coeur des Alpes, une église suisse a engendré *sept autres*, dans des villes suisses mais aussi dans des pays étrangers. C’est une foi qui traverse les montagnes, les cultures et les langues, un souffle divin qui ne s’arrête pas aux frontières.
+										</p>
+										
+										<p class="fact">
+											Depuis Genève, sont nées:Zurich (Suisse),Lausanne (Suisse),Bâle (Suisse),Paris (France),Berlin (Allemagne),Rome (Italie),Bruxelles (Belgique).<br/>
+												
+											Une église alpine qui a touché l’Europe entière.
+										</p>
+						</div>
+						
+					</div>
+					
+					<div class="continent">
+					<!--AFRIQUE--!>
+					<h1 id="Afrique"> AFRIQUE </h1>
+						 
+						<div class="pays">
+								<img src="images/Burundi_church.jpg" title="Kingdom of Heaven Church-Burundi" id="Eglise">
+								<img src="images/Burundi_Drapeau.jpg" id="drapeau">
+									<h3>Burundi-Bujumbura</h3>
+										<p class="fact">
+										La Kingdom of Heaven Church au Burundi est profondément engagée dans la guérison spirituelle et sociale d’un pays marqué par les conflits. Dirigée par des missionnaires passionnés comme l’apôtre Seth Kaburungu, cette église œuvre pour la paix, l’unité ethnique et la transformation des vies à travers l’Évangile. Elle vise à implanter des églises dans les 18 provinces du pays et à soutenir les orphelins, les veuves et les familles dans le besoin.
+										</p>
+										
+										<p class="fact">
+										 Au Burundi, une église a été le berceau de *douze autres*, un véritable mouvement de réveil. Ces églises ne sont pas seulement des bâtiments, mais des foyers de transformation, de paix et d’espoir.
+										</p>
+										
+										<p class="fact">
+												Une église à Bujumbura a engendré:Gitega (Burundi),Ngozi (Burundi),Kigali (Rwanda),Bukavu (RDC),Nairobi (Kenya),Dar es Salaam (Tanzanie),Kampala (Ouganda),Lubumbashi (RDC),Arusha (Tanzanie),Dodoma (Tanzanie),Juba (Soudan du Sud),Addis-Abeba (Éthiopie).<br/>
+												
+												Une véritable vague de réveil en Afrique de l’Est.
+
+										</p>
+						</div>
+						
+						<div class="pays">
+							   <img src="images/Senegal_church.jpeg" title="Kingdom of Heaven Church-Senegal" id="Eglise">
+							   <img src="images/Senegal_Drapeau.jpg" id="drapeau">
+									<h3>Senegal-Dakar</h3>
+									   <p class="fact">
+									   Au Sénégal, la Kingdom of Heaven Church s’est implantée au cœur d’un pays majoritairement musulman, auprès du peuple Wolof. Grâce à des partenariats missionnaires, des églises émergent dans plusieurs villes. Les croyants y vivent leur foi avec humilité et courage, souvent dans des conditions difficiles. L’église joue un rôle essentiel dans la traduction des Écritures et l’éveil spirituel de la jeunesse sénégalaise.
+									   </p>
+									   
+									   <p class="fact">
+										 Une église au Sénégal a engendré *cinq autres*, chacune dans une ville différente. C’est une foi qui bat au rythme des tambours africains, qui parle toutes les langues du cœur.
+									   </p>
+									   
+									   <p class="fact">
+											 Depuis Dakar, sont nées:Thiès (Sénégal),Saint-Louis (Sénégal),Banjul (Gambie),Conakry (Guinée),Bamako (Mali).<br/>
+										
+											Une foi qui traverse l’Afrique de l’Ouest.
+									   </p>
+						</div>
+						
+						<div class="pays">
+							   <img src="images/Afrique_du_sud_church.jpg" title="Kingdom of Heaven Church-Afrique du sud" id="Eglise">
+							   <img src="images/Afrique_du_sud_Drapeau.jpg" id="drapeau">
+									<h3> Afrique du Sud-Johannesburg</h3>
+									   <p class="fact">
+									   En Afrique du Sud, la Kingdom of Heaven Bible Church est présente à Benoni, Gauteng. Elle offre un espace de culte vibrant et communautaire, centré sur la louange et l’enseignement biblique. Une autre branche, Gate of Heaven Kingdom Church, fondée en 2015, agit comme une organisation à but non lucratif, servant les quartiers de Pretoria et Soshanguve avec des projets sociaux et spirituels.
+									   </p>
+									   
+									   <p class="fact">
+										 En Afrique du Sud, une église a donné naissance à *quatre autres*, dans des villes et des pays voisins. C’est une foi qui traverse les cicatrices de l’histoire pour bâtir des ponts d’amour.
+									   </p>
+									   
+									   <p class="fact">
+											Une église à Johannesburg a donné naissance à:Pretoria (Afrique du Sud),Durban (Afrique du Sud),Lusaka (Zambie),Harare (Zimbabwe).<br/>
+												
+											Un rayonnement dans toute l’Afrique australe.
+									   </p>
+						</div>
+						
+						<div class="pays">
+							   <img src="images/Republique_centrafricaine_church.jpeg" title="Kingdom of Heaven Church-Republique-centrafricaine" id="Eglise">
+							   <img src="images/Republique_centrafricaine_Drapeau.jpg" id="drapeau">
+									<h3>Republique-centrafricaine-Bangui</h3>
+									   <p class="fact">
+									   Dans ce pays en quête de paix, l’église joue un rôle crucial. Elle soutient les communautés chrétiennes face aux crises humanitaires et politiques. Les pasteurs et missionnaires y apportent l’espérance, la guérison et l’unité. L’église est un phare dans l’obscurité, offrant des prières puissantes pour la paix, la justice et la restauration nationale.
+									   </p>
+									   
+									   <p class="fact">
+										 Une église en Centrafrique a fait naître *quatre autres*, chacune portant un message de paix dans des régions marquées par les défis. Là où elle est née, la lumière a continué de briller.
+									   </p>
+									   
+									   <p class="fact">
+										  Depuis Bangui, sont nées:Berbérati (RCA),Bambari (RCA),Douala (Cameroun),Libreville (Gabon).<br/>
+											
+											Une foi qui traverse les forêts équatoriales.
+									   </p>
+						</div>
+						
+					</div>
+					
+					<div class="continent">
+					<!--OCEANIE--!>
+					<h1 id="Oceannie">OCEANNIE</h1>
+					
+						<div class="pays">
+							  <img src="images/Australie_church.jpeg" title="Kingdom of Heaven Church-Australie" id="Eglise">
+							  <img src="images/Australie_Drapeau.jpg" id="drapeau">
+									<h3>Australie-Sydney</h3>
+									  <p class="fact">
+									  En Australie, la Kingdom Hope Church incarne le message du Royaume à travers une communauté chaleureuse et missionnaire. Elle fait partie du réseau INC et se distingue par son culte authentique, ses ministères dynamiques et son désir de “faire descendre le ciel sur la terre”.
+									  </p>
+									  
+									  <p class="fact">
+										Sous le ciel immense de l’Australie, une église a fait naître *quatre autres*, chacune dans une ville différente. C’est une foi qui court librement, comme le vent sur les plaines.
+									  </p>
+									  
+									  <p class="fact">
+										  Une église à Sydney a donné naissance à:Melbourne (Australie),Brisbane (Australie),Perth (Australie),Auckland (Nouvelle-Zélande).<br/>
+										
+											Une expansion dans l’Océanie.
+									  </p>
+						</div>
+						
+					</div>
+					
+					<div class="continent">
+					<!--ASIE--!>
+					<h1 id="Asie">ASIE </h1>
+					
+						<div class="pays">
+							<img src="images/Japon_church.jpg" title="Kingdom of Heaven Church-Japon" id="Eglise">
+							<img src="images/Japon_Drapeau.jpg" id="drapeau">
+								<h3>Japon-Tokyo</h3>
+									<p class="fact">
+									Au Japon, la Kingdom of Heaven Church s’exprime dans des lieux comme Osaka International Church, où l’Évangile est enseigné avec clarté et passion. L’église japonaise, souvent minoritaire, est pourtant un témoin puissant de la grâce et de la résurrection du Christ.
+									</p>
+									
+									<p class="fact">
+									 Une église au Japon a donné naissance à *cinq autres*, dans des villes différentes et même à l’étranger. C’est une foi discrète mais puissante, comme une fleur de cerisier qui éclot dans le silence.
+									</p>
+									
+									<p class="fact">
+										Depuis Tokyo, sont nées:Osaka (Japon),Nagoya (Japon),Fukuoka (Japon),Seoul (Corée du Sud),Bangkok (Thaïlande).<br/>
+										
+											</ul>
+										Une foi qui traverse l’Asie de l’Est.
+									</p>
+						</div>
+						
+						<div class="pays">
+							<img src="images/Chine_Church.jpg" title="Kingdom of Heaven Church-Chine" id="Eglise">
+							<img src="images/Chine_Drapeau.jpg" id="drapeau">
+								<h3>Chine-Pekin</h3>
+									<p class="fact">
+									 En Chine, l’idée du Royaume de Dieu a inspiré des mouvements historiques comme le Taiping Heavenly Kingdom, fondé par Hong Xiuquan. Aujourd’hui, les églises de maison continuent de proclamer la souveraineté de Dieu face à l’oppression, vivant leur foi avec courage et profondeur théologique.
+									</p>
+									
+									<p class="fact">
+									 Dans les profondeurs de la Chine, une église a engendré *trois autres*, parfois dans des lieux où la foi doit se cacher. Mais même dans le secret, elle grandit, elle vit, elle transforme.
+									</p>
+									
+									<p class="fact">
+										Une église à Shanghai a engendré:Beijing (Chine),Guangzhou (Chine),Taipei (Taïwan).<br/>
+				
+										Une expansion dans les grandes métropoles asiatiques.
+									</p>
+						</div>
+						
+						<div class="pays">
+							<img src="images/coree_du_sud_church.jpg" title="Kingdom of Heaven Church-Coree du Sud" id="Eglise">
+							<img src="images/coree_du_sud_Drapeau.jpg" id="drapeau">
+								<h3> Corée du Sud-Seoul</h3>
+									<p class="fact">
+									La Shincheonji Church, aussi appelée New Heaven and New Earth, est une église coréenne qui enseigne la révélation biblique avec intensité. Elle attire des milliers de croyants et se distingue par sa formation théologique et sa vision du Royaume comme une réalité spirituelle sur terre.
+									</p>
+									
+									<p class="fact">
+									  En Corée du Sud, une église a engendré *deux autres*, chacune portant une vision renouvelée. C’est une foi technologique et traditionnelle, un pont entre les générations.
+									</p>
+									
+									<p class="fact">
+										Une église à *Seoul* a donné naissance à:Busan (Corée du Sud),Daegu (Corée du Sud).<br/>
+												
+										Une croissance dans les grandes villes coréennes.
+
+									</p>
+						</div>
+						
+						<div class="pays">
+							<img src="images/Russie_church.jpeg" title="Kingdom of Heaven Church-Russie" id="Eglise">
+							<img src="images/Russie_Drapeau.jpg" id="drapeau">
+								<h3>Russie-Moscou</h3>
+									<p class="fact">
+									 En Russie, la Kingdom of Heaven est vécue comme une condition spirituelle, enseignée par l’Église orthodoxe. Des figures comme Saint Innocent d’Alaska ont prêché la voie vers le Royaume à travers la repentance, la prière et la transformation intérieure.
+									</p>
+									
+									<p class="fact">
+									 Une église en Russie a donné naissance à *quatre autres*, dans des villes et des pays voisins. C’est une foi qui résiste au froid, aux murs, aux silences imposés.
+									</p>
+									
+									<p class="fact">
+										Depuis Moscou, sont nées:Saint-Pétersbourg (Russie),Kazan (Russie),Minsk (Biélorussie),Almaty (Kazakhstan).<br/>
+										
+										Une foi qui s’étend dans l’Eurasie.
+									</p>
+						</div>
+					</div>
+				</section>
+		</main>
+		
+		<footer>
+
+					<div class="row">
+						 <p class="col">
+						    Adresse: BUJUMBURA, Kigobe<br/>
+							Tel:+257 67 70 89 45<br/>
+							E-mail:<a href="mailto:Kingdomchurch@.org">Kingdomchurch@.org</a><br/>
+						</p>
+							
+						<p class="social_media">
+						<a href="http://www.facebook.com"><img src="images/facebook.jpg"id="icone"/></a>KH Church<br/>
+						<a href="http://www.instagram.com"><img src=" images/instagram.jpg"id="icone"/></a>Kingdom_of_Heaven_Church<br/>
+						<a href="http://WWW.youtube.com"><img src="images/youtube.jpg" id="icone"/></a>KH-Church channel<br/>
+						<a href="http://www.x.com"><img src="images/X.jpg" id="icone"/></a>Kingdom.Heaven.Church<br/>
+						<a href="http://WWW.threads.com"><img src="images/threads.jpg" id="icone"/></a>kingdom_ _Hevean_Church<br/>
+						</P>
+					</div>
+					
+					 <p>&copy BIU-BST-12-077-2024 *TOUS DROITS RESERVES</p>
+					 <p>IRAKOZE Quick Agur </p>
+			</footer>
+			
+			
+		  
+	 </body>
+</html>

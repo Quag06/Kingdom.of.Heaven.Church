@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+      <head>
+	       <meta charset="utf-8">
+		   <title>Messages et Ressources </title>
+		   <meta name="viewport" content="Width=device-width,initial-scale=1.0">
+		   <style>
+		    body{
+			margin:0;
+			font-family:'sergoe UI',sans-serif;
+			background-color:#FFFFF0;
+			color:#333;
+			padding:2px;
+			}
+			header{
+			background-image:url('images/faith.jpg');
+			background-size:cover;
+			background-position:center;
+			padding:1px;
+			position:relative;
+			text-align:center;
+			}
+		    .effet{
+			margin:20px auto;
+			max-width:300px;
+			white-space:nowrap;/*empeche le retour a la ligne */
+			}
+			.effet img{
+			width:50px;
+			height:50px;
+			border-radius:50%;
+			margin-bottom:5px;
+			}
+           .presentation{
+		    font-weight:bold;
+			border-radius:8px;
+			background-color:rgb(255,0,128);
+		    padding:10px;
+		    text-align:justify;
+		    margin-bottom:3px;
+			}
+			
+			.audio-video{
+			 display:flex;
+			 flex-direction:columm;
+			 padding:5px;
+			 margin:3px;
+			 gap:3px;
+			 }
+			 .un{
+			background-color:rgb(128,255,255);
+			flex:2;
+			padding:12px;
+			font-weight:bold;
+			text-align:center;
+			border-radius:8px;
+			}
+			.Meditation{
+			font-weight:bold;
+		    border-radius:8px;
+			background-color:rgb(255,0,255);
+			padding:10px;
+		    text-align:justify;
+			margin-bottom:3px;
+			}
+			.reflection{
+			font-weight:bold;
+		    border-radius:8px;
+			background-color:rgb(128,255,255);
+			padding:20px;
+		    text-align:justify;
+			margin-bottom:3px;
+			}
+			.actions button{
+			margin:10px;
+			padding:15px 40px;
+			font-size:1em;
+			background-color:rgb(34,177,76);
+			color:white;
+			border:none;
+			border-radius:5px;
+			cursor:pointer;
+			}
+			.actions button a{
+			text-decoration:none;
+			}
+			#ressources{
+			display:flex;
+		    flex-direction:columm;
+			padding:5px;
+			margin:3px;
+		    gap:3px;
+			}
+			.ressource-block{
+		    background:linear-gradient(to right,rgb(192,255,255),rgb(128,255,255),rgb(224,255,255));
+			flex:3;
+			padding:40px;
+			font-weight:bold;
+			text-align:center;
+			border-radius:8px;
+			}
+			#verset-du-jour{
+			font-weight:bold;
+		    border-radius:8px;
+			background:linear-gradient(to right,rgb(255,128,255),rgb(255,0,255),rgb(255,192,255));
+			padding:10px;
+		    text-align:justify;
+			margin-bottom:3px;
+			}
+			#suggestions-recherche{
+			font-weight:bold;
+		    border-radius:8px;
+			background:linear-gradient(to right,rgb(192,255,255),rgb(128,255,255),rgb(224,255,255));
+			padding:10px;
+		    text-align:justify;
+			margin-bottom:3px;
+			}
+			.deux{
+			display:flex;
+			gap:30px;
+			}
+			.perso{
+			flex:2;
+			}
+			.audios{
+			gap:15px;
+			}
+			nav ul{
+			list-style:none;
+			padding:10px;
+			display:flex;
+			justify-content:center;
+			flex-wrap:wrap;
+			gap:15px;
+			}
+			nav ul li a{
+			padding:8px 12px;
+			display:inline-block;
+			color:white;
+			text-decoration:none;
+			font-weight:bold;
+			background-color:rgba(0,0,0,0.4);
+			border:2px solid #87CEEB;
+			
+			}
+			#search{
+			width:300px;
+			height:30px;
+			}
+			footer{
+		    background-color:#87CEEB;
+            color:black;
+            border:1px solid black;
+			padding-bottom:20px;
+			}
+			
+			
+			 
+		   </style>
+	  </head>
+	  
+	  <body>
+	  
+	    <header>
+		     <nav>
+			    <ul>
+					 <li><a href="index.html">ACCUEIL</a></li>
+					 <li><a href="propos.html">A PROPOS</a></li>
+					 <li><a href="Activ&event.html">ACTIVITES & EVENEMENTS</a></li>
+					 <li><a href="contact.html">CONTACT</a></li>
+					 <li><a href="Don.html">DON</a></li>
+					 <li><a href="Engag&Minist.html">ENGAGEMENTS ET MINISTERES</a></li>
+				</ul>
+			 </nav>
+		      <div class="effet">
+		         <img src=" images/debut1_Mess&Ress.jpg" alt=""><strong>MESSAGES ET RESSOURCES </strong><img src=" images/debut2_Mess&Ress.jpg" alt="">
+			   </div>
+		</header>
+		
+		<main>
+	       <div class="presentation">
+				<p>
+				La foi vient de ce qu’on entend, et ce qu’on entend vient de la Parole de Christ. À Kingdom of Heaven Church, nous croyons que chaque message est une semence divine, capable de transformer les cœurs et d’éclairer les vies. Cette page vous offre un accès libre et vivant à nos enseignements, nos réflexions, et nos ressources spirituelles. Que votre visite soit une rencontre avec Dieu.<br/>
+				"Ta parole est une lampe à mes pieds, et une lumière sur mon sentier."   <em>Psaume 119:105</em>
+				</p>
+		   </div>
+		
+  
+		   <section class="audio-video">
+		   <!--Une section dédiée aux prédications enregistrées:
+				- Lecteur audio intégré
+				- Lecteur vidéo (YouTube, Vimeo ou hébergement interne)
+				- Classement par thème: foi, guérison, Royaume, famille, service, etc.
+				- Classement par prédicateur ou date
+				- Boutons de partage et de téléchargement--!>
+            
+			<div class="un">
+			     <h2> Messages et enseignements visuels</h2>
+			    <div class="videos">
+						  <div class="video"> <!--Video de la foi--!>
+							  <video width="450" height="200" controls src="videos/voir1.mp4">
+							  <p>Fortifions notre foi.</p>
+						  </div>
+						  
+						  <div class="video">  <!--video de la guerison--!>
+							   <video width="450" height="200" controls src="videos/voir2.mp4">
+							   <h4>Les maladies s'enfouit,les aveugles voient,les paralytiques marchent.</h4>
+						  </div>
+				</div>
+			</div>
+				  
+				  
+			
+			<div class="un">
+			      <h2> Messages et enseignements audios Avec Kanguka</h2>
+				<div class="audios">
+					   <div class="audio"> <!--AUdio Royaume--!>
+							<audio width="100" height="50" controls src="audios/Kanguka1.mp3">
+							<div>Que ton reigne vienne et que ta volonte soit faite sur la terre comme au ciel.</div>
+						 </div>
+						 <div class="audio">  <!--Audio Famille--!>
+							<audio width="100" height="50" controls src="audios/Kanguka2.mp3">
+							<h4>La famille c'est sacree </h4>
+						  </div>
+						  
+						 <div class="audio">  <!--Audio Service--!>
+							<audio width="100" height="50" controls src="audios/Kanguka3.mp3">
+							<h4>Etre au service de Dieu,comme Elie</h4>
+						</div>
+						
+						<div class="audio">  <!--Audio Temoignages--!>
+							<audio width="100" height="50" controls src="audios/Kanguka4.mp3">
+							<h4>Temoignage(Je suis enceinte de 	7 mois)</h4>
+						</div>
+						
+						<div class="audio">  <!--Audio Temoignages--!>
+							<audio width="100" height="50" controls src="audios/Kanguka5.mp3">
+							<h4>Temoignage(Le cancer est gueri)</h4>
+						</div>
+				</div>
+			</div>
+			 
+		   </section>
+		   
+		   <div class="Meditation">
+					<h2> Méditation du jour:<em>"la paix au milieu de la tempête"</em></h2>
+						<blockquote>
+						<strong>verset clé :</strong><br/>
+						"je vous laisse la paix .je ne vous donne pas comme le monde donne." jean 14:27
+						</blockquote>
+					
+					<p><strong>Résumé:</strong><br/>
+						Dans un monde rempli d'incertitudes,Jésus nous offre une paix qui dépasse toute compréhension  . cette meditation nous à invite  nous recentrer sur cette promesse, même lorsque les circonstances semblent nous échapper.
+					</p>
+					
+					<article>
+						<p>
+							Il est facile de sentir submerger lorsque les tempêtes de la vie se lèvent :maladie,conflits,solitude,échecs...<br/>
+							pourtant,au coeur de ces épreuves , une voix douce nous murmure:"je suis là ."<br/>
+							la paix que Jésus donne n'est pas l'absence de problèmes,mais la présence de Dieu dans nos problèmes.<br/>
+							Elle ne dépend ni de nos émotions ni de nos réussites ,mais de  nôtre confiance en celui qui tient toutes choses entre ses mains.<br/>
+							Aujourd'hui ,prends un moment pour respirer profondément,relire ce verset,et laisser la paix de Dieu envahir ton coeur.<br/>
+							Elle est là ,disponible,offerte sans condition.
+						</p>
+					</article>
+			</div>
+					
+					<section class="reflection">
+						<h3>Réflexion personnelle:</h3>
+							<ul>
+								<li>Quelles sont les tempêtes  que je traverse en ce moment ?</li>
+								<li>Ai-je pris le temps de remettre mes inquiétudes entre les mains de Dieu ?</li>
+								<li>comment puis-je cultiver cette paix dans mon quotidien ?</li>
+							</ul>
+					</section>
+							
+					<div class="actions">
+						<button>Lire maintenant </button>
+						<button>Partager</button>
+						<button>Télécharger en PDF</button>
+					</div>
+			
+			
+			
+					<h2>Ressources Téléchargeables </h2>
+					
+			<section id="ressources">
+					<div class="ressource-block">  <!--plan de Lecture--!>
+						<h3>Plans de lecture biblique</h3>
+							<ul>
+							   <li>
+								  <strong>Mensuel-thème :la foi</strong><br>
+								  30 jours de méditation sur la promesse de Dieu.<br>
+								  <a href="plan-mensuel.pdf" download>Télécharger le PDF</a>
+								  <a href="#">Partager</a>
+							   </li>
+							   
+							   <li>
+								 <strong> Annuel-Lecture complète</strong><br>
+								  Un parcours quotidien à travers toute la Bible en 365 jours.<br>
+								  <a href="plan annuel.pdf" download>Télécharger le PDF</a>
+								  <a href="#">partager</a>
+							   </li>
+							</ul>
+					</div>
+							<!--Guides d’étude--!>
+							<div class="ressource-block">
+							<h3>Guides d’étude</h3>
+							<ul>
+							   <li>
+								   <strong>Étude du livre de Jean</strong><br>
+									Découvrez la vie et les paroles de Jésus à travers l’Évangile de Jean.<br>
+									<a href="guide-jean.pdf" download>Télécharger le guide</a>
+									<a href="#">partager</a>
+									
+							   </li>
+					   
+									   <strong>Thème: Le pardon</strong><br>
+								Un chemin biblique vers la guérison intérieure et la réconciliation.<br>
+								<a href="guide-pardon.pdf" download>Télécharger le guide</a> 
+								<a href="#">Partager</a>
+							  </li>
+							</ul>
+						  </div>	
+
+						  <!-- Fiches de prière -->
+						  <div class="ressource-block">
+							<h3> Fiches de prière</h3>
+							<ul>
+							  <li>
+								<strong>Prière personnelle</strong><br>
+								Modèles pour prier selon vos besoins: paix, guérison, direction.<br>
+								<a href="priere-personnelle.pdf" download>Télécharger les fiches</a>
+							  </li>
+							  <li>
+								<strong>Intercession pour les nations</strong><br>
+								Fiches pour prier pour les pays, les dirigeants et les églises.<br>
+								<a href="intercession-nations.pdf" download>Télécharger les fiches</a>
+							  </li>
+							</ul>
+						  </div>
+
+						  <!-- Groupes de maison -->
+						  <div class="ressource-block">
+							<h3> Supports pour groupes de maison</h3>
+							<ul>
+							  <li>
+								<strong>Pack animation</strong><br>
+								Questions de discussion, mini-enseignements et activités pour vos rencontres.<br>
+								<a href="pack-groupe.pdf" download>Télécharger le pack</a>
+							  </li>
+							  <li>
+								<strong>Guide facilitateur</strong><br>
+								  Conseils pour animer un groupe de maison avec bienveillance et clarté.<br>
+								<a href="guide-facilitateur.pdf" download>Télécharger le guide</a>
+							  </li>
+							</ul>
+						  </div>
+						</section>
+						
+						<section id="verset-du-jour">
+							  <h2> Verset du jour</h2>
+								  <blockquote>
+									« Car je connais les projets que j’ai formés sur vous, dit l’Éternel, projets de paix et non de malheur, afin de vous donner un avenir et de l’espérance. »<br>
+									<em>Jérémie 29:11</em>
+								  </blockquote>
+							  <p>
+								Ce verset nous rappelle que Dieu n’est jamais pris au dépourvu. Même lorsque nos chemins semblent obscurs, ses plans sont pleins de lumière. Il nous invite à lui faire confiance, à marcher avec foi, et à espérer en ce qu’il prépare.
+							  </p>
+							  <p class="actions">
+								<button><a href="#">Commenter</a></button>
+								<button><a href="#">Partager</a></button> 
+								<button><a href="#">Recevoir par e-mail</a></button>
+							  </p>
+					</section>
+
+					<section id="suggestions-recherche">
+					  <h2> Suggestions et recherche</h2>
+						  <form>
+							<label for="search">Rechercher une ressource:</label><br>
+							<input type="text" id="search" name="search" placeholder="">
+							<button type="submit">Rechercher</button>
+						  </form>
+				<div class="deux">
+                    <div class="perso">
+					  <h3>Suggestions personnalisées:</h3>
+						  <ul>
+							<li>Comment prier avec puissance</li>
+							<li>Les modèles de prière dans les Évangiles</li>
+							<li>Découvrir les Actes des Apôtres</li>
+							<li>La sagesse dans les Proverbes</li>
+						  </ul>
+					 </div>
+						  
+                    <div class="perso">
+					  <h3 >Historique récent:</h3>
+					  <ul>
+						<li>Étude sur la foi</li>
+						<li>Prière pour la guérison</li>
+					  </ul>
+					</div>
+				</div>
+					</section>
+			</main>
+			
+			<footer>
+
+					<div class="row">
+						 <p class="col">
+						    Adresse: BUJUMBURA, Kigobe<br/>
+							Tel:+257 67 70 89 45<br/>
+							E-mail:<a href="mailto:Kingdomchurch@.org">Kingdomchurch@.org</a><br/>
+						</p>
+							
+						
+					</div>
+					
+					 <p>&copy BIU-BST-12-077-2024 *TOUS DROITS RESERVES</p>
+					 <p>IRAKOZE Quick Agur </p>
+			</footer>
+		   
+	  </body>
+</html>

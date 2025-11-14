@@ -1,0 +1,330 @@
+<!Doctype html>
+<html>
+       <head>
+	       <meta charset="utf-8">
+		   <title>Activites et evenements </title>
+		   <meta name="viewport" content="Width=device-width,initial-scale=1.0">
+		   <style>
+		      body{
+			  font-family:Arial,sans-serif;
+			  background-color:#fff;
+			  color:#333;
+			  }
+			  header{
+			  background-image:url('images/faith.jpg');
+			  background-size:cover;
+			  background-position:center;
+			  padding:1px;
+			  position:relative;
+			  text-align:center;
+			  }
+			  .effet{
+			  margin:20px auto;
+			  max-width:300px;
+			  white-space:nowrap;/*empeche le retour a la ligne */
+			  }
+			  .effet img{
+			  width:50px;
+			  height:50px;
+			  border-radius:50%;
+			  margin-bottom:5px;
+			 }
+			 .ok{
+			  color:rgb(255,128,0);
+			 }
+			 .row{
+			 display:flex;
+			 flex-direction:columm;
+			 padding:5px;
+			 margin:3px;
+			 gap:3px;
+			 }
+			 
+			.picture{
+			 background-color:#FFFFF0;
+			 flex:2;
+			 padding:12px;
+			 font-weight:bold;
+			 text-align:center;
+			 border-radius:20px;
+			}
+			  #concertt,#worship,#pray,#benevolat{
+			  width:300px;
+			  height:300px;
+			  }
+			  .bienvenue{
+			  font-weight:bold;
+			  border-radius:8px;
+			  background-color:rgb(255,0,128);
+		      padding:10px;
+		      text-align:justify;
+		      margin-bottom:8px;
+			  }
+			  h2{
+			  color:rgb(163,73,164);
+			  }
+			  table{
+			  width:100px;
+			  border-collapse:collapse;
+			  margin-top:15px;
+			  }
+			  th,td{
+			  border:1px solid rgb(34,177,76);
+			  padding:10px;
+			  text-align:left;
+			  }
+			  .btn{
+			  display:inline-block;
+			  padding:4px 10px;
+			  background-color:rgb(34,177,76);
+			  color:white;
+			  text-decoration:none;
+			  border-radius:5px;
+			  }
+			  .events_activity{
+			 display:flex;
+			 flex-direction:columm;
+			 padding:10px;
+			 margin:3px;
+			 gap:8px;
+			 }
+			  .moments_engagements{
+			 display:flex;
+			 flex-direction:columm;
+			 padding:10px;
+			 margin:3px;
+			 gap:8px;
+		     }
+			 .participation-formation{
+			 display:flex;
+			 flex-direction:columm;
+			 padding:10px;
+			 margin:3px;
+			 gap:8px;
+			 }
+			 
+			.one{
+			background-color:#FFFFF0;
+			flex:2;
+			padding:12px;
+			font-weight:bold;
+			border-radius:30px;
+		    text-align:justify;
+			line-height:25px;
+			}
+			  .two{
+		    background-color:#FFFFF0;
+			flex:2;
+			padding:12px;
+			font-weight:bold;
+			border-radius:30px;
+			text-align:justify;
+			line-height:25px;
+			
+			}
+			.three{
+			background-color:#FFFFF0;
+			flex:2;
+			padding:12px;
+			font-weight:bold;
+			border-radius:30px;
+			text-align:justify;
+			line-height:25px;
+			}
+			
+			nav ul{
+			list-style:none;
+			padding:10px;
+			display:flex;
+			justify-content:center;
+			gap:15px;
+			}
+			nav ul li a{
+			padding:8px 12px;
+			display:inline-block;
+			color:white;
+			text-decoration:none;
+			font-weight:bold;
+			background-color:rgba(0,0,0,0.4);
+			border:2px solid #87CEEB;
+			}
+			footer{
+		    background-color:#87CEEB;
+            color:black;
+            border:1px solid black;
+			}
+			.social_media{
+			position:absolute;
+			right:25px;
+			}
+			.social_media img{
+			width:15px;
+			height:15px;
+			border-radius:50%;
+			margin-bottom:2px;
+			}
+			
+			
+			  
+		   </style>
+	   </head>
+	   
+	   <body>
+	    <header>
+		       
+			  <nav>
+			    <ul>
+					 <li><a href="index.html">ACCUEIL</a></li>
+					 <li><a href="propos.html">A PROPOS</a></li>
+					 <li><a href="Mess&Ress.html">MESSAGES ET RESSOURCES</a></li>
+					 <li><a href="contact.html">CONTACT</a></li>
+					 <li><a href="Don.html">DON</a></li>
+					 <li><a href="Engag&Minist.html">ENGAGEMENTS ET MINISTERES</a></li>
+				</ul>
+			 </nav>
+		    <div class="effet">
+				 <p>
+					<img src=" images/debut1_Activ&event.jpg" alt=""><strong>ACTIVITES ET EVENEMENTS</strong><img src=" images/debut2_Activ&event.jpg" alt="">
+				</p>
+			</div>
+		      <h1 class="ok">Découvrez la vie communautaire de notre Église .</h1>
+			  
+			<div class="row">
+			  <div class="picture">
+				  <img src="images/concert.jpg" alt="concert" id="concertt">
+				  <h2> concert de Remerciement</h2>
+			  </div>
+			  
+			  <div class="picture">
+				  <img src="images/louange.jpg" alt="louange" id="worship">
+				  <h2> Worship</h2>
+			  </div>
+			</div>
+			  
+			<div class="row">
+			  <div class="picture">
+					<img src="images/Priere.jpg" alt="priere" id="pray">
+					<h2>Pray</h2>
+			  </div>
+			  
+			  <div class="picture">
+					<img src="images/benev.jpg" alt="benevolat" id="benevolat">
+					<h2>bénévolat</h2>
+			  </div>
+			</div>
+		</header>
+		
+		<main>
+	       <div class="bienvenue">
+		      <h1>Activités et Événements</h1>
+			  <p>
+			    Bienvenue sur la page des Activités et Événements de notre église!
+               Cette page est dédiée à la vie dynamique et chaleureuse de notre communauté. Vous y trouverez les prochains rendez-vous spirituels, les projets solidaires, les moments festifs et les opportunités de vous engager. Que vous soyez membre fidèle ou visiteur curieux, nous vous invitons à découvrir et à participer à ce qui fait battre le cœur de notre église.
+			  </p>
+		   </div>
+		   
+		
+			<section class="events_activity">
+				   <div class="one"> <!--Evenements--!>
+					 <h2> Événements à venir</h2>
+					   <table>
+							<tr>
+							  <th>Date</th>
+							  <th>Événement</th>
+							  <th>Lieu</th>
+							  <th>Action</th>
+							</tr>
+							<tr>
+							  <td>28 septembre</td>
+							  <td>Culte spécial de rentrée</td>
+							  <td>Église principale</td>
+							  <td><a href="#" class="btn">S'inscrire</a></td>
+							</tr>
+							<tr>
+							  <td>5 octobre</td>
+							  <td>Atelier de louange</td>
+							  <td>Salle communautaire</td>
+							  <td><a href="#" class="btn">En savoir plus</a></td>
+							</tr>
+						</table>
+				   </div>
+				   
+				   <div class="one"> <!--Activity--!>
+					  <h2>Activités régulières</h2>
+						<ul class="fiction">
+						   <li>Groupes de prière- Tous les mardis à 19h</li>
+						   <li>Études bibliques-Jeudi soir, animées par le pasteur</li>
+						   <li>Chorale-Répétitions le samedi à 15h</li>
+						   <li>Activités jeunesse-Dimanche matin pendant le culte</li>
+						   <li>Ateliers créatifs-Un samedi par mois (peinture, artisanat, cuisine)</li>
+						</ul>
+				  </div>
+		   </section>
+		   
+		   <section class="moments_engagements"> 
+				  <div class="two"> <!--MOMENTS--!>
+					   <h2> Moments forts passés</h2>
+						   <p>Fête de la Pentecôte: 120 participants, louange en plein air</p>
+						   <p>Collecte alimentaire: 300 kg de denrées distribuées</p>
+						   <p>Concert de Noël: Église pleine, ambiance magique</p>
+						   <p>Témoignage de Claire: "J’ai retrouvé la paix grâce à la prière partagée"</p>
+				  </div>
+				  
+				  <div class="two"> <!--Engagements--!>
+					   <h2>Engagement communautaire</h2>
+						  <ul class="fiction">
+							 <li>Aide aux sans-abri: Distribution de repas chaque dernier vendredi du mois</li>
+							 <li>Collecte de vêtements: Dépôt ouvert tous les dimanches</li>
+							 <li>Visites aux personnes isolées: Programme de bénévolat en cours</li>
+							 <li>Partenariat avec l’association locale: Soutien scolaire et accompagnement</li>
+						  </ul>
+				  </div>
+		</section>
+		
+		<section class="participation-formation">
+		  <div class="three"> <!--participation--!>
+		      <h2>Appels à participation</h2>
+			     <p>Proposez une activité ou un atelier</p>
+				 <ul class="fiction">
+				     <li>Rejoignez l’équipe d’accueil</li>
+				     <li>Participez à l’organisation des cultes </li>
+				     <li> Aidez à la logistique des événements</li>
+					 <li>Intégrez la chorale ou le groupe technique</li>
+					 <li>Proposez une activité ou un atelier</li>
+				 </ul>
+		  </div>
+		  
+		  <div class="three"> <!--formation et atelier--!>
+		    <h2>Formations et Ateliers</h2>
+			<p>
+			  Notre église propose régulièrement des ateliers pratiques et des formations spirituelles ouvertes à tous. Gestion financière, parentalité, cuisine solidaire ou approfondissement biblique — chaque session est animée par des membres passionnés ou des intervenants invités. Ces moments sont l’occasion d’apprendre, de partager et de grandir ensemble dans la foi et la vie quotidienne.
+			</p>
+		  </div>
+		</section>
+		</main>
+		
+		<footer>
+
+					<div class="row">
+						 <p class="col">
+						    Adresse: BUJUMBURA, Kigobe<br/>
+							Tel:+257 67 70 89 45<br/>
+							E-mail:<a href="mailto:Kingdomchurch@.org">Kingdomchurch@.org</a><br/>
+						</p>
+							
+						<p class="social_media">
+						<a href="http://www.facebook.com"><img src="images/facebook.jpg"id="icone"/></a>KH Church<br/>
+						<a href="http://www.instagram.com"><img src=" images/instagram.jpg"id="icone"/></a>Kingdom_of_Heaven_Church<br/>
+						<a href="http://WWW.youtube.com"><img src="images/youtube.jpg" id="icone"/></a>KH-Church channel<br/>
+						<a href="http://www.x.com"><img src="images/X.jpg" id="icone"/></a>Kingdom.Heaven.Church<br/>
+						<a href="http://WWW.threads.com"><img src="images/threads.jpg" id="icone"/></a>kingdom_ _Hevean_Church<br/>
+						</P>
+					</div>
+					
+					 <p>&copy BIU-BST-12-077-2024 *TOUS DROITS RESERVES</p>
+					 <p>IRAKOZE Quick Agur </p>
+			</footer>
+		   
+	        
+	   </body>
+</html>
